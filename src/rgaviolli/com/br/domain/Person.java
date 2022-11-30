@@ -2,30 +2,36 @@ package rgaviolli.com.br.domain;
 
 public class Person {
 
-        private String nome;
+        private String name;
 
-        private String nome2;
+        private String gender;
 
-        public Person(String nome, String nome2) {
-            this.nome = nome;
-            this.nome2 = nome2;
+        public Person(String name, String gender) {
+            this.name = name;
+            this.gender = gender;
         }
 
-        public String getNome() {
-            return nome;
-        }
+    public String getName() {
+        return name;
+    }
 
-        public void setNome(String nome) {
-            this.nome = nome;
-        }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        public String getNome2() {
-            return nome2;
-        }
+    public String getGender() {
+        return gender;
+    }
 
-        public void setNome2(String nome2){
-            this.nome2 = nome2;
-        }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
+    @Override
+    public String toString() {
+        return name ;
+    }
 }
+
+
 
